@@ -542,32 +542,11 @@ nav {
     color: #D44638;
 }
 
-@keyframes float_like {
-    0% {
-        transform: scale(1);
-    }
-
-    25% {
-        transform: scale(1.5);
-    }
-
-    50% {
-        transform: scale(1);
-    }
-
-    75% {
-        transform: scale(1.5);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
 
 .likes {
     position: fixed;
     bottom: 10%;
-    left: 97%;
+    left: 95%;
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
@@ -576,23 +555,26 @@ nav {
 .likes a {
     color: white;
     font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    /* Aligns icon and text vertically */
     transition: color 0.3s ease;
-
+    text-decoration: none;
+    /* Ensures no underline on the link */
 }
 
 .like-content {
     visibility: hidden;
     font-size: 0.9rem;
-    width: 10vw;
     background-color: #34b7f1;
     color: #fff;
     text-align: center;
     border-radius: 5%;
-    padding: 1%;
+    padding: 0.5rem 1rem;
     position: absolute;
     right: 110%;
     top: 50%;
-    transform: translateY(-45%);
+    transform: translateY(-50%);
     opacity: 0;
     transition: opacity 0.3s;
 }
@@ -602,12 +584,14 @@ nav {
     opacity: 1;
 }
 
-.likes .like {
-    animation: float_like 4s ease-in-out infinite;
-}
-
 .likes .like:hover {
     color: #34b7f1;
+}
+
+#like-count {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
 }
 
 
