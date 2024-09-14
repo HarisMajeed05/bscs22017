@@ -164,12 +164,10 @@ nav {
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
-    /* Set minimum height */
     position: relative;
     text-align: left;
     width: 100%;
     margin: 0;
-    /* Ensure there is no margin */
 }
 
 #skills h2 {
@@ -231,7 +229,6 @@ nav {
     color: white;
 }
 
-/* Hard Skills Column */
 .hard-skills-list {
     list-style-type: none;
     padding-left: 15%;
@@ -243,19 +240,138 @@ nav {
     margin-bottom: 5%;
 }
 
-#education {
+.dropdown-container {
+    position: relative;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -23%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    z-index: 999;
+    width: 150%;
+}
+
+.dropdown li {
+    display: block;
+}
+
+.dropdown li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+.dropdown-container:hover .dropdown {
+    display: block;
+}
+
+#on-site-courses {
     background-image: url('black3.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    min-height: 100vh;
     position: relative;
+    text-align: left;
+    width: 100%;
+    margin: 0;
 }
 
+#on-site-courses h2 {
+    font-size: 3.4rem;
+    text-align: center;
+    margin: 0;
+    padding-top: 5%;
+    color: white;
+}
 
+.on-site-courses-category {
+    display: block;
+    margin-top: 2%;
+    margin-left: 15%;
+    width: 80%;
+}
+
+.on-site-courses-category h3 {
+    font-size: 1.7rem;
+    color: #ddd;
+    margin-bottom: 2%;
+    border-left: 5px solid #61dafb;
+    padding-left: 5%;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+.on-site-courses-list {
+    list-style-type: none;
+    padding-left: 15%;
+    padding-top: 3%;
+    margin-left: 11%;
+}
+
+.on-site-courses-list li {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 2%;
+}
+
+#online-courses {
+    background-image: url('black3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+}
+
+#online-courses h2 {
+    font-size: 3.4rem;
+    text-align: center;
+    margin: 0;
+    padding-top: 5%;
+    color: white;
+}
+
+.online-courses-category {
+    display: block;
+    margin-top: 2%;
+    margin-left: 15%;
+    width: 80%;
+}
+
+.online-courses-category h3 {
+    font-size: 1.7rem;
+    color: #ddd;
+    margin-bottom: 2%;
+    border-left: 5px solid #61dafb;
+    padding-left: 5%;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+.online-courses-list {
+    list-style-type: none;
+    padding-left: 15%;
+    padding-top: 3%;
+    margin-left: 11%;
+}
+
+.online-courses-list li {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 2%;
+}
 
 
 
@@ -288,11 +404,8 @@ nav {
 }
 
 .project {
-    /* background-color: rgba(42, 51, 54, 0.3); */
     background-color: rgba(0, 0, 0, 0.7);
-    /* To ensure visibility on dark background */
     flex: 1 1 30%;
-    /* Adjust width of each project to take up about half the row */
     padding: 20px;
     margin: 1% 2%;
     border-radius: 20%;
@@ -302,7 +415,7 @@ nav {
     font-size: 1rem;
     font-weight: bold;
     transition: transform 0.2s, box-shadow 0.2s;
-    max-width: 30%;
+    max-width: 20%;
 }
 
 .project:hover {
@@ -319,15 +432,12 @@ nav {
 .project-link {
     display: block;
     color: inherit;
-    /* Inherit the color from the project box */
     text-decoration: none;
-    /* Remove underline */
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .project-link:hover {
     color: inherit;
-    /* Ensure color remains the same on hover */
 }
 
 
@@ -557,16 +667,14 @@ nav {
     font-size: 1.5rem;
     display: flex;
     align-items: center;
-    /* Aligns icon and text vertically */
     transition: color 0.3s ease;
     text-decoration: none;
-    /* Ensures no underline on the link */
 }
 
 .like-content {
     visibility: hidden;
     font-size: 0.9rem;
-    background-color: #34b7f1;
+    background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
     text-align: center;
     border-radius: 5%;

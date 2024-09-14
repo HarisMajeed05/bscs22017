@@ -25,8 +25,15 @@
                 <li><a href="/#home">Home</a></li>
                 <li><a href="/#about">About Me</a></li>
                 <li><a href="projects.html">Projects</a></li>
+
+                <li class="dropdown-container">
+                    <a href="/#on-site-courses">Education</a>
+                    <ul class="dropdown">
+                        <li><a href="/#on-site-courses">Courses on Site</a></li>
+                        <li><a href="/#online-courses">Courses Online</a></li>
+                    </ul>
+                </li>
                 <li><a href="/#skills">Skills</a></li>
-                <li><a href="/#education">Education</a></li>
             </div>
         </ul>
     </nav>
@@ -110,15 +117,17 @@
         </a>
     </div>
     <div class="likes">
-        <a class="like" id="like-count">
+        <a class="like" id="like-button">
             <i class="fas fa-thumbs-up"></i>
+            <span id="like-count">0</span>
             <span class="like-content">Like My Portfolio</span>
+
         </a>
     </div>
     <footer>
         <p>© 2024 Haris Majeed Raja</p>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
