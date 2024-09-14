@@ -273,7 +273,64 @@ nav {
     display: block;
 }
 
-#on-site-courses {
+#education {
+    background-image: url('black3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+#education h2 {
+    font-size: 3.4rem;
+    text-align: center;
+    margin: 0;
+    padding-top: 5%;
+    color: white;
+}
+
+.degree-category {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2%;
+    padding-left: 4%;
+    padding-top: 2%;
+    padding-right: 1%;
+}
+
+.degree {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid #ddd;
+    padding: 2%;
+    border-radius: 2rem;
+    box-shadow: 0vw 1vw 1vw rgb(0, 0, 0);
+}
+
+.degree a {
+    text-decoration: none;
+    border: none;
+}
+
+.degree h3 {
+    font-size: 1.8rem;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.degree p {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 0.3rem;
+    margin: 5%;
+}
+
+#degree-programs {
     background-image: url('black3.jpg');
     background-size: cover;
     background-position: center;
@@ -285,7 +342,7 @@ nav {
     margin: 0;
 }
 
-#on-site-courses h2 {
+#degree-programs h2 {
     font-size: 3.4rem;
     text-align: center;
     margin: 0;
@@ -293,14 +350,14 @@ nav {
     color: white;
 }
 
-.on-site-courses-category {
+.degree-programs-category {
     display: block;
     margin-top: 2%;
     margin-left: 15%;
     width: 80%;
 }
 
-.on-site-courses-category h3 {
+.degree-programs-category h3 {
     font-size: 1.7rem;
     color: #ddd;
     margin-bottom: 2%;
@@ -310,20 +367,20 @@ nav {
     margin-top: 5%;
 }
 
-.on-site-courses-list {
+.degree-programs-list {
     list-style-type: none;
     padding-left: 15%;
     padding-top: 3%;
     margin-left: 11%;
 }
 
-.on-site-courses-list li {
+.degree-programs-list li {
     font-size: 1.2rem;
     color: white;
     margin-bottom: 2%;
 }
 
-#online-courses {
+#short-courses {
     background-image: url('black3.jpg');
     background-size: cover;
     background-position: center;
@@ -335,7 +392,7 @@ nav {
     margin: 0;
 }
 
-#online-courses h2 {
+#short-courses h2 {
     font-size: 3.4rem;
     text-align: center;
     margin: 0;
@@ -343,14 +400,14 @@ nav {
     color: white;
 }
 
-.online-courses-category {
+.short-courses-category {
     display: block;
     margin-top: 2%;
     margin-left: 15%;
     width: 80%;
 }
 
-.online-courses-category h3 {
+.short-courses-category h3 {
     font-size: 1.7rem;
     color: #ddd;
     margin-bottom: 2%;
@@ -360,14 +417,14 @@ nav {
     margin-top: 5%;
 }
 
-.online-courses-list {
+.short-courses-list {
     list-style-type: none;
     padding-left: 15%;
     padding-top: 3%;
     margin-left: 11%;
 }
 
-.online-courses-list li {
+.short-courses-list li {
     font-size: 1.2rem;
     color: white;
     margin-bottom: 2%;
@@ -723,4 +780,103 @@ footer {
 footer p {
     margin: 0;
     font-size: 0.8rem;
+}
+
+@media (min-width: 1200px) {
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .degree-category {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 600px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .degree-category {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project {
+        max-width: 30%;
+    }
+
+    .logo-icon {
+        width: 4vw;
+        height: 4vw;
+    }
+}
+
+@media (max-width: 600px) {
+
+    nav,
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-icon {
+        width: 8vw;
+        height: 8vw;
+    }
+
+    .center-image img {
+        width: 25vh;
+        height: 25vh;
+    }
+
+    .about-me-image img {
+        height: auto;
+        width: 90%;
+        margin-right: 0;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .degree-category {
+        grid-template-columns: 1fr;
+    }
+
+    .project {
+        flex: 1 1 80%;
+        max-width: 100%;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .skills-category,
+    .degree-category {
+        width: 100%;
+    }
+
+    .about-me-content {
+        left: 10%;
+    }
+
+    .social-icons {
+        bottom: 5%;
+        left: 2%;
+    }
+
+    .likes {
+        left: 90%;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    p {
+        font-size: 90%;
+    }
 }
