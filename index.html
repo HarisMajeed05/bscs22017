@@ -6,53 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@200;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
-    <!-- Navigation Bar -->
     <nav>
         <ul class="navbar">
-            <!-- <li class="logo"><a href="">Portfolio</a></li> -->
+            <li class="logo">
+                <a href="mine.jpg" target="_blank">
+                    <img src="mine.jpg" alt="Logo" class="logo-icon">
+                </a>
+                <a href="">My Portfolio</a>
+            </li>
             <div class="nav-links">
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="projects.html">Projects</a></li>
                 <li><a href="#certificates">Certificates</a></li>
                 <li><a href="#courses">Courses</a></li>
-                <li><a href="#contact">Contact Me</a></li>
             </div>
         </ul>
     </nav>
 
-
-    <!-- Main Section with Image and Text Below -->
-    <div class="main">
-
-        <div class="center-image">
-            <img src="mine.jpg" alt="My image">
-        </div>
-
+    <section id="home">
         <div class="intro-content">
             <h1>Haris Majeed Raja</h1>
             <p>Web Developer | Designer</p>
-            <p>Hello! I'm Haris, a passionate web developer creating clean and efficient websites. Let's build something
+            <p>Hello! I'm Haris, a passionate web developer creating clean and efficient websites.<br> Let's build
+                something
                 great together!</p>
         </div>
-    </div>
+    </section>
+    <section id="about">
+        <div class="about-me-content">
+            <h2>About Me</h2>
+            <p>Web Developer | Designer<br>
+                Hello! I'm Haris, a passionate web developer creating clean and efficient websites.<br>
+                Let's build something great together!</p>
+        </div>
+    </section>
+    <section id="certificates">
+        <h2>Certificates</h2>
+        <p>Details about your certificates...</p>
+    </section>
+    <section id="courses">
+        <h2>Courses</h2>
+        <p>Details about your courses...</p>
+    </section>
 
-    <!-- Sections (optional placeholders) -->
-    <!-- <section id="about">
-        <h2>About Me</h2>
-        <p>Details about yourself...</p>
-    </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <p>Details about your projects...</p>
-    </section>
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Your contact information...</p>
-    </section> -->
+
+
+
+
+
+
+
+
+    <div class="social-icons">
+        <a href="Haris Majeed.pdf" download class="download">
+            <i class="fas fa-download"></i>
+            <span class="downlaod-content">Download CV of Haris</span>
+        </a>
+        <a href="https://www.instagram.com/haxris___/?hl=en" target="_blank" class="instagram"><i
+                class="fab fa-instagram"></i>
+            <span class="insta-content">visit Insta profile</span>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100084582070570" target="_blank" class="facebook"><i
+                class="fab fa-facebook"></i>
+            <span class="fb-content">visit FB profile</span></a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=bscs22017@itu.edu.pk" class="gmail" target="_blank">
+            <i class="fas fa-envelope"></i>
+            <span class="gmail-content">Email @Haris</span>
+        </a>
+    </div>
     <footer>
         <p>© 2024 Haris Majeed Raja</p>
     </footer>
