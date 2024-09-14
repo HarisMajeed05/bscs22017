@@ -147,7 +147,7 @@ nav {
     margin-right: 5vw;
 }
 
-#skills {
+/* #skills {
     background-image: url('black3.jpg');
     background-size: cover;
     background-position: center;
@@ -157,6 +157,68 @@ nav {
     justify-content: center;
     align-items: center;
     position: relative;
+} */
+#skills {
+    background-image: url('black3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    /* Set minimum height */
+    position: relative;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    /* Ensure there is no margin */
+}
+
+h2 {
+    font-size: 2.4rem;
+    text-align: center;
+    margin: 0;
+    /* Reset margin */
+    padding-top: 5%;
+    color: white;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+.skills-category {
+    width: 45%;
+}
+
+.skills-category h3 {
+    font-size: 1.7rem;
+    color: #ddd;
+    margin-bottom: 7%;
+    border-left: 5px solid #61dafb;
+    padding-left: 5%;
+    margin-left: 10%;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vw;
+}
+
+.skill-item {
+    text-align: center;
+}
+
+.skill-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 5%;
+}
+
+.skill-item p {
+    font-size: 16px;
+    color: white;
 }
 
 #education {
