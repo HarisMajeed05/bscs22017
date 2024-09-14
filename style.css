@@ -172,8 +172,8 @@ nav {
     /* Ensure there is no margin */
 }
 
-h2 {
-    font-size: 2.4rem;
+#skills h2 {
+    font-size: 3.4rem;
     text-align: center;
     margin: 0;
     /* Reset margin */
@@ -185,6 +185,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     margin-top: 2%;
+    margin-left: 5%;
 }
 
 .skills-category {
@@ -210,15 +211,36 @@ h2 {
     text-align: center;
 }
 
+.skill-item a {
+    text-decoration: none;
+    border: none;
+}
+
+.skill-item a:hover {
+    text-decoration: none;
+}
+
 .skill-item img {
-    width: 60px;
-    height: 60px;
+    width: 30%;
+    height: 40%;
     margin-bottom: 5%;
 }
 
 .skill-item p {
     font-size: 16px;
     color: white;
+}
+
+/* Hard Skills Column */
+.hard-skills-list {
+    list-style-type: none;
+    padding-left: 15%;
+}
+
+.hard-skills-list li {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 5%;
 }
 
 #education {
@@ -519,6 +541,75 @@ h2 {
 .social-icons .gmail:hover {
     color: #D44638;
 }
+
+@keyframes float_like {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.5);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    75% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.likes {
+    position: fixed;
+    bottom: 10%;
+    left: 97%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.likes a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+
+}
+
+.like-content {
+    visibility: hidden;
+    font-size: 0.9rem;
+    width: 10vw;
+    background-color: #34b7f1;
+    color: #fff;
+    text-align: center;
+    border-radius: 5%;
+    padding: 1%;
+    position: absolute;
+    right: 110%;
+    top: 50%;
+    transform: translateY(-45%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.likes .like:hover .like-content {
+    visibility: visible;
+    opacity: 1;
+}
+
+.likes .like {
+    animation: float_like 4s ease-in-out infinite;
+}
+
+.likes .like:hover {
+    color: #34b7f1;
+}
+
 
 
 
