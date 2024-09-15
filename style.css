@@ -103,6 +103,19 @@ nav {
     line-height: 1.5;
 }
 
+#home .fb-feed {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 33%;
+}
+
+#home .fb-feed iframe {
+    width: 15vw;
+    border-radius: 8rem;
+}
+
+
 #urdu {
     background-image: url('black3.jpg');
     background-size: cover;
@@ -136,6 +149,18 @@ nav {
 .urdu-content p {
     font-size: 1rem;
     line-height: 1.5;
+}
+
+#urdu .fb-feed {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 35%;
+}
+
+#urdu .fb-feed iframe {
+    width: 15vw;
+    border-radius: 8rem;
 }
 
 #french {
@@ -173,6 +198,18 @@ nav {
     line-height: 1.5;
 }
 
+#french .fb-feed {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 35%;
+}
+
+#french .fb-feed iframe {
+    width: 15vw;
+    border-radius: 8rem;
+}
+
 #chinese {
     background-image: url('black3.jpg');
     background-size: cover;
@@ -206,6 +243,18 @@ nav {
 .chinese-content p {
     font-size: 1rem;
     line-height: 1.5;
+}
+
+#chinese .fb-feed {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 35%;
+}
+
+#chinese .fb-feed iframe {
+    width: 15vw;
+    border-radius: 8rem;
 }
 
 #video {
