@@ -985,7 +985,7 @@ nav {
 .likes {
     position: fixed;
     bottom: 10%;
-    left: 95%;
+    left: 90%;
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
@@ -1054,6 +1054,128 @@ footer p {
     font-size: 0.8rem;
 }
 
+/* 
+
+
+
+*/
+
+/* Responsive Styles for Navbar */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        margin-right: 0;
+    }
+
+    .nav-links li {
+        margin: 0 10px;
+    }
+
+    .navbar li a {
+        font-size: 0.8rem;
+    }
+
+    .logo-icon {
+        width: 10vw;
+        height: 10vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar li a {
+        font-size: 0.7rem;
+        padding: 5px 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin-right: 0;
+    }
+
+    .nav-links li {
+        margin: 0 10px;
+    }
+
+    .logo-icon {
+        width: 10vw;
+        height: 10vw;
+    }
+}
+
+/* Responsive Styles for Intro Content */
+@media (max-width: 768px) {
+    .intro-content {
+        text-align: left;
+        padding-left: 5%;
+    }
+
+    .intro-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .intro-content p {
+        font-size: 0.9rem;
+    }
+
+    .fb-feed {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        left: 35%;
+        top: -15%;
+    }
+
+    .fb-feed iframe {
+        width: 15vw;
+        border-radius: 8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro-content {
+        text-align: left;
+        padding-left: 5%;
+    }
+
+    .intro-content h1 {
+        font-size: 1.2rem;
+    }
+
+    .intro-content p {
+        font-size: 0.8rem;
+    }
+
+    .fb-feed {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        left: 35%;
+        top: -15%;
+    }
+
+    .fb-feed iframe {
+        width: 15vw;
+        border-radius: 8rem;
+    }
+}
+
+/* Responsive About Section */
+@media (max-width: 768px) {
+    .about-me-content {
+        left: 10%;
+        padding-top: 0;
+    }
+
+    .about-me-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-me-content p {
+        font-size: 0.9rem;
+    }
+
+}
+
 @media (min-width: 1200px) {
     .skills-grid {
         grid-template-columns: repeat(3, 1fr);
@@ -1101,11 +1223,6 @@ footer p {
         height: 25vh;
     }
 
-    .about-me-image img {
-        height: auto;
-        width: 90%;
-        margin-right: 0;
-    }
 
     .skills-grid {
         grid-template-columns: 1fr;
@@ -1131,10 +1248,6 @@ footer p {
         width: 100%;
     }
 
-    .about-me-content {
-        left: 10%;
-    }
-
     .social-icons {
         bottom: 5%;
         left: 2%;
@@ -1149,6 +1262,6 @@ footer p {
     h3,
     h4,
     p {
-        font-size: 90%;
+        font-size: 50%;
     }
 }
