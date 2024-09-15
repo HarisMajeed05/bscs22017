@@ -173,6 +173,41 @@ nav {
     line-height: 1.5;
 }
 
+#chinese {
+    background-image: url('black3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 60px; */
+}
+
+.chinese-content {
+    color: white;
+    text-align: center;
+    position: absolute;
+    /* left: 31%; */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.chinese-content h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.chinese-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
 #about {
     background-image: url('black3.jpg');
     background-size: cover;
