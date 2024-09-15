@@ -743,6 +743,38 @@ nav {
     color: #D44638;
 }
 
+.linkedin-content {
+    visibility: hidden;
+    font-size: 0.9rem;
+    width: 10vw;
+    background-color: #005582;
+    color: #fff;
+    text-align: center;
+    border-radius: 5%;
+    padding: 1%;
+    position: absolute;
+    left: 110%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.social-icons .linkedin:hover .linkedin-content {
+    visibility: visible;
+    opacity: 1;
+}
+
+.social-icons .linkedin {
+    animation: float_insta 4s ease-in-out infinite;
+}
+
+.social-icons .linkedin:hover {
+    color: #005582;
+}
+
+
+
 
 .likes {
     position: fixed;
