@@ -1,12 +1,12 @@
 
-let likeCount = 0;
+// let likeCount = 0;
 
-function updateLikeCount() {
-    likeCount++;
-    document.getElementById('like-count').innerText = likeCount;
-}
+// function updateLikeCount() {
+//     likeCount++;
+//     document.getElementById('like-count').innerText = likeCount;
+// }
 
-document.getElementById('like-button').addEventListener('click', function (event) {
-    event.preventDefault();
-    updateLikeCount();
-});
+// document.getElementById('like-button').addEventListener('click', function (event) {
+//     event.preventDefault();
+//     updateLikeCount();
+// });

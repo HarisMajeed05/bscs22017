@@ -12,131 +12,348 @@
 </head>
 
 <body>
-    <nav>
-        <ul class="navbar">
-            <li class="logo">
-                <a href="https://drive.google.com/file/d/1VQg1lYuNCwmhDFdBXgl_e88wjQ8JZWeQ/view?usp=sharing"
-                    target="_blank">
-                    <img src="mine.jpg" alt="Logo" class="logo-icon">
-                </a>
-                <a href="/">My Portfolio</a>
-            </li>
-            <div class="nav-links">
-                <li><a href="/#home">Home</a></li>
-                <li><a href="/#about">About Me</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="/#skills">Skills</a></li>
-                <li class="dropdown-container">
-                    <a href="/#education">Education</a>
-                    <ul class="dropdown">
-                        <li><a href="/#degree-programs">Degree Programs</a></li>
-                        <li><a href="/#short-courses">Short Courses</a></li>
-                    </ul>
-                </li>
-                <li class="language-dropdown">
-                    <a href="/">
-                        <span>Language</span>
-                    </a>
-                    <ul class="language-menu">
-                        <li><a href="chinese.html">Chinese</a></li>
-                        <li><a href="french.html">French</a></li>
-                        <li><a href="urdu.html">Urdu</a></li>
-                    </ul>
-                </li>
-            </div>
-        </ul>
+    <nav id="nav">
+
     </nav>
 
     <section id="my-projects">
-        <h1>My Projects</h1>
-        <div class="project-list">
-            <div class="project">
-                <a href="https://github.com/HarisMajeed05/Gomuko-Py2" target="_blank" class="project-link">
-                    Gomoku Game using Python
-                    <div class="project-date">Nov 2022</div>
-                </a>
-            </div>
-            <div class="project">
-                <a href="https://github.com/HarisMajeed05/Shogi-Game" target="_blank" class="project-link">
-                    Shogi Game using C++
-                    <div class="project-date">Dec 2022</div>
-                </a>
-            </div>
-            <div class="project">
-                <a href="https://github.com/HarisMajeed05/Snake-game" target="_blank" class="project-link">
-                    Snake Game using C++
-                    <div class="project-date">Jan 2023</div>
-                </a>
-            </div>
-            <div class="project">
-                <a href="https://github.com/HarisMajeed05/Chess-Game" target="_blank" class="project-link">
-                    Chess Game using C++
-                    <div class="project-date">Mar 2023</div>
-                </a>
-            </div>
-            <div class="project">
-                <a href="https://github.com/HarisMajeed05/Paint-Brush" target="_blank" class="project-link">
-                    Paint Brush using Python
-                    <div class="project-date">May 2023</div>
-                </a>
-            </div>
-            <div class="project">
-                <a href="https://github.com/HarisMajeed05/DOS-The-Myth" target="_blank" class="project-link">
-                    DOS Shell & Text Editor
-                    <div class="project-date">Nov 2023</div>
-                </a>
-            </div>
-            <div class="project">
-                <a href="https://github.com/HarisMajeed05/Vending-Machine" target="_blank" class="project-link">
-                    Vending Machine Circuit in Logism
-                    <div class="project-date">Feb 2024</div>
-                </a>
-            </div>
-            <div class="project">
-                <a href="https://github.com/sanahashim22/Hotel-Management-System" target="_blank" class="project-link">
-                    Hotel Management Website
-                    <div class="project-date">May 2024</div>
-                </a>
-            </div>
-            <div class="project">
-                <a href="https://github.com/sanahashim22/bscs22101_bscs22017_Group_D_OS" target="_blank"
-                    class="project-link">
-                    Server & Client
-                    <div class="project-date">In Progress</div>
-                </a>
-            </div>
-        </div>
+
     </section>
     <div class="social-icons">
-        <a href="https://drive.google.com/file/d/1lG4EAIriyfpVFyHwZuciQu9ZuKGBgjGb/view?usp=sharing" target="_blank"
-            class="download">
-            <i class="fas fa-download"></i>
-            <span class="downlaod-content">Download CV</span>
-        </a>
-        <a href="https://www.instagram.com/haxris___/?hl=en" target="_blank" class="instagram"><i
-                class="fab fa-instagram"></i>
-            <span class="insta-content">visit Insta profile</span>
-        </a>
-        <a href="https://www.facebook.com/profile.php?id=100084582070570" target="_blank" class="facebook"><i
-                class="fab fa-facebook"></i>
-            <span class="fb-content">visit FB profile</span></a>
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=bscs22017@itu.edu.pk" class="gmail" target="_blank">
-            <i class="fas fa-envelope"></i>
-            <span class="gmail-content">Email @Haris</span>
-        </a>
+
     </div>
     <div class="likes">
-        <a class="like" id="like-button">
-            <i class="fas fa-thumbs-up"></i>
-            <span id="like-count">0</span>
-            <span class="like-content">Like My Portfolio</span>
 
-        </a>
     </div>
-    <footer>
-        <p>© 2024 Haris Majeed Raja</p>
+    <footer id="footer">
+
     </footer>
     <script src="script.js"></script>
+    <script>
+        const projectSection = {
+            title: "My Projects",
+            projects: [
+                {
+                    name: "Gomoku Game using Python",
+                    link: "https://github.com/HarisMajeed05/Gomuko-Py2",
+                    date: "Nov 2022"
+                },
+                {
+                    name: "Shogi Game using C++",
+                    link: "https://github.com/HarisMajeed05/Shogi-Game",
+                    date: "Dec 2022"
+                },
+                {
+                    name: "Snake Game using C++",
+                    link: "https://github.com/HarisMajeed05/Snake-game",
+                    date: "Jan 2023"
+                },
+                {
+                    name: "Chess Game using C++",
+                    link: "https://github.com/HarisMajeed05/Chess-Game",
+                    date: "Mar 2023"
+                },
+                {
+                    name: "Paint Brush using Python",
+                    link: "https://github.com/HarisMajeed05/Paint-Brush",
+                    date: "May 2023"
+                },
+                {
+                    name: "DOS Shell & Text Editor",
+                    link: "https://github.com/HarisMajeed05/DOS-The-Myth",
+                    date: "Nov 2023"
+                },
+                {
+                    name: "Vending Machine Circuit in Logism",
+                    link: "https://github.com/HarisMajeed05/Vending-Machine",
+                    date: "Feb 2024"
+                },
+                {
+                    name: "Hotel Management Website",
+                    link: "https://github.com/sanahashim22/Hotel-Management-System",
+                    date: "May 2024"
+                },
+                {
+                    name: "Server & Client",
+                    link: "https://github.com/sanahashim22/bscs22101_bscs22017_Group_D_OS",
+                    date: "In Progress"
+                }
+            ]
+        };
+        function printProjects(projectSection) {
+            const section = document.getElementById('my-projects');
+
+
+            const title = document.createElement('h1');
+            title.textContent = projectSection.title;
+            section.appendChild(title);
+
+            const projectList = document.createElement('div');
+            projectList.className = 'project-list';
+
+            projectSection.projects.forEach(project => {
+                const projectDiv = document.createElement('div');
+                projectDiv.className = 'project';
+
+                const projectLink = document.createElement('a');
+                projectLink.href = project.link;
+                projectLink.target = '_blank';
+                projectLink.className = 'project-link';
+                projectLink.textContent = project.name;
+
+                const projectDate = document.createElement('div');
+                projectDate.className = 'project-date';
+                projectDate.textContent = project.date;
+
+                projectLink.appendChild(projectDate);
+                projectDiv.appendChild(projectLink);
+                projectList.appendChild(projectDiv);
+            });
+
+            section.appendChild(projectList);
+        }
+        printProjects(projectSection);
+
+
+        const navContent = {
+            logo: {
+                link: "https://drive.google.com/file/d/1VQg1lYuNCwmhDFdBXgl_e88wjQ8JZWeQ/view?usp=sharing",
+                imageSrc: "mine.jpg",
+                altText: "Logo",
+                portfolioText: "My Portfolio"
+            },
+            navLinks: [
+                { text: "Home", href: "/#home" },
+                { text: "About Me", href: "/#about" },
+                { text: "Projects", href: "projects.html" },
+                { text: "Skills", href: "/#skills" },
+                {
+                    text: "Education",
+                    href: "/#education",
+                    dropdown: [
+                        { text: "Degree Programs", href: "/#degree-programs" },
+                        { text: "Short Courses", href: "/#short-courses" }
+                    ]
+                },
+                {
+                    text: "Language",
+                    href: "/",
+                    dropdown: [
+                        { text: "Chinese", href: "chinese.html" },
+                        { text: "French", href: "french.html" },
+                        { text: "Urdu", href: "urdu.html" }
+                    ]
+                }
+            ]
+        };
+
+        function printNav(nav) {
+            const navElement = document.getElementById('nav');
+            const ul = document.createElement('ul');
+            ul.className = "navbar";
+
+            // Create logo section
+            const logoLi = document.createElement('li');
+            logoLi.className = "logo";
+
+            const logoLink = document.createElement('a');
+            logoLink.href = nav.logo.link;
+            logoLink.target = "_blank";
+            const logoImage = document.createElement('img');
+            logoImage.src = nav.logo.imageSrc;
+            logoImage.alt = nav.logo.altText;
+            logoImage.className = "logo-icon";
+            logoLink.appendChild(logoImage);
+
+            const portfolioLink = document.createElement('a');
+            portfolioLink.href = "/";
+            portfolioLink.textContent = nav.logo.portfolioText;
+
+            logoLi.appendChild(logoLink);
+            logoLi.appendChild(portfolioLink);
+            ul.appendChild(logoLi);
+
+            // Create navigation links
+            const navLinksDiv = document.createElement('div');
+            navLinksDiv.className = 'nav-links';
+
+            nav.navLinks.forEach(item => {
+                const li = document.createElement('li');
+
+                const link = document.createElement('a');
+                link.href = item.href;
+                link.textContent = item.text;
+                li.appendChild(link);
+
+                // Check for dropdowns
+                if (item.dropdown) {
+                    const dropdown = document.createElement('ul');
+                    dropdown.className = item.text === "Language" ? "language-menu" : "dropdown";
+
+                    item.dropdown.forEach(dropdownItem => {
+                        const dropdownLi = document.createElement('li');
+                        const dropdownLink = document.createElement('a');
+                        dropdownLink.href = dropdownItem.href;
+                        dropdownLink.textContent = dropdownItem.text;
+                        dropdownLi.appendChild(dropdownLink);
+                        dropdown.appendChild(dropdownLi);
+                    });
+                    li.className = item.text === "Education" ? "dropdown-container" : "language-dropdown";
+                    li.appendChild(dropdown);
+                }
+
+                navLinksDiv.appendChild(li);
+            });
+
+            // Append the nav links div to the main ul
+            ul.appendChild(navLinksDiv);
+            navElement.appendChild(ul);
+        }
+
+        // Call the function to print the navigation
+        printNav(navContent);
+
+        const likesContent = {
+            likeButtonId: "like-button",
+            iconClass: "fas fa-thumbs-up",
+            likeCountId: "like-count",
+            likeCount: 0,
+            likeText: "Like My Portfolio"
+        };
+
+        // Function to print the like button and count dynamically
+        function printLikeButton() {
+            const likeDiv = document.createElement('div');
+            likeDiv.className = 'likes';
+
+            const likeAnchor = document.createElement('a');
+            likeAnchor.className = 'like';
+            likeAnchor.id = 'like-button';
+
+            const likeIcon = document.createElement('i');
+            likeIcon.className = 'fas fa-thumbs-up';
+
+            const likeCountSpan = document.createElement('span');
+            likeCountSpan.id = 'like-count';
+            likeCountSpan.textContent = '0';
+
+            const likeText = document.createElement('span');
+            likeText.className = 'like-content';
+            likeText.textContent = 'Like My Portfolio';
+
+            likeAnchor.appendChild(likeIcon);
+            likeAnchor.appendChild(likeCountSpan);
+            likeAnchor.appendChild(likeText);
+            likeDiv.appendChild(likeAnchor);
+
+            document.body.appendChild(likeDiv);
+
+            // Add event listener after rendering the elements
+            document.getElementById('like-button').addEventListener('click', function (event) {
+                event.preventDefault();
+                updateLikeCount();
+            });
+        }
+
+        let likeCount = 0;
+
+        function updateLikeCount() {
+            likeCount++;
+            document.getElementById('like-count').innerText = likeCount;
+        }
+
+        // Ensure the DOM is fully loaded before executing the function
+        document.addEventListener('DOMContentLoaded', function () {
+            printLikeButton();
+        });
+
+
+        const socialIconsContent = {
+            icons: [
+                {
+                    href: "https://drive.google.com/file/d/1lG4EAIriyfpVFyHwZuciQu9ZuKGBgjGb/view?usp=sharing",
+                    target: "_blank",
+                    class: "download",
+                    iconClass: "fas fa-download",
+                    contentClass: "download-content",
+                    text: "Downlaod CV"
+                },
+                {
+                    href: "https://www.instagram.com/haxris___/?hl=en",
+                    target: "_blank",
+                    class: "instagram",
+                    iconClass: "fab fa-instagram",
+                    contentClass: "insta-content",
+                    text: "Visit Insta Profile"
+                },
+                {
+                    href: "https://www.facebook.com/profile.php?id=100084582070570",
+                    target: "_blank",
+                    class: "facebook",
+                    iconClass: "fab fa-facebook",
+                    contentClass: "fb-content",
+                    text: "Visit FB Profile"
+                },
+                {
+                    href: "https://www.linkedin.com/in/haris-majeed-raja-390386267/",
+                    target: "_blank",
+                    class: "linkedin",
+                    iconClass: "fab fa-linkedin",
+                    contentClass: "linkedin-content",
+                    text: "Visit LinkedIn Profile"
+                },
+                {
+                    href: "https://mail.google.com/mail/?view=cm&fs=1&to=bscs22017@itu.edu.pk",
+                    target: "_blank",
+                    class: "gmail",
+                    iconClass: "fas fa-envelope",
+                    contentClass: "gmail-content",
+                    text: "Email @Haris"
+                }
+            ]
+        };
+        function printSocialIcons(socialIcons) {
+            const socialDiv = document.createElement('div');
+            socialDiv.className = "social-icons";
+
+            socialIcons.icons.forEach(icon => {
+                const a = document.createElement('a');
+                a.href = icon.href;
+                a.target = icon.target;
+                a.className = icon.class;
+
+                const i = document.createElement('i');
+                i.className = icon.iconClass;
+                a.appendChild(i);
+
+                const span = document.createElement('span');
+                span.className = icon.contentClass;
+                span.textContent = icon.text;
+                a.appendChild(span);
+
+                socialDiv.appendChild(a);
+            });
+
+            // Append the socialDiv to the body or a specific container
+            document.body.appendChild(socialDiv);
+        }
+
+        // Call the function to print the social icons
+        printSocialIcons(socialIconsContent);
+
+
+        const foot = {
+            content: "© 2024 Haris Majeed Raja"
+        };
+        function printFooter(footer) {
+            const div = document.getElementById('footer');
+
+            const p = document.createElement('p');
+            p.textContent = footer.content;
+            div.appendChild(p);
+        }
+        printFooter(foot);
+    </script>
 </body>
 
 </html>

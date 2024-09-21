@@ -831,7 +831,7 @@ nav {
     animation: float_fb 4s ease-in-out infinite;
 }
 
-.downlaod-content {
+.download-content {
     visibility: hidden;
     font-size: 0.9rem;
     width: 10vw;
@@ -848,7 +848,7 @@ nav {
     transition: opacity 0.3s;
 }
 
-.social-icons .download:hover .downlaod-content {
+.social-icons .download:hover .download-content {
     visibility: visible;
     opacity: 1;
 }
