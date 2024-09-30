@@ -12,6 +12,9 @@
 
 <body>
     <nav id="nav">
+        <button class="nav-toggle" aria-label="Toggle Navigation">
+            <span class="hamburger"></span>
+        </button>
 
     </nav>
 
@@ -45,6 +48,12 @@
 
     <script src="script.js"></script>
     <script>
+        const navToggle = document.querySelector(".nav-toggle");
+        const body = document.querySelector("body");
+
+        navToggle.addEventListener("click", () => {
+            body.classList.toggle("nav-active");
+        });
         const navContent = {
             logo: {
                 link: "https://drive.google.com/file/d/1VQg1lYuNCwmhDFdBXgl_e88wjQ8JZWeQ/view?usp=sharing",

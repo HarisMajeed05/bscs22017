@@ -9,12 +9,18 @@ html {
 }
 
 nav {
+    /* display: flex; */
     width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
+    /* padding: 1rem; */
+}
+
+section {
+    background-image: url('black3.jpg');
 }
 
 .navbar {
@@ -53,9 +59,12 @@ nav {
 }
 
 
+
+
+
 .logo-icon {
-    width: 2vw;
-    height: 2vw;
+    width: 3vw;
+    height: 3vw;
     border-radius: 50%;
     object-fit: cover;
     vertical-align: middle;
@@ -69,7 +78,7 @@ nav {
 }
 
 #home {
-    background-image: url('black3.jpg');
+    /* background-image: url('black3.jpg'); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -107,7 +116,7 @@ nav {
     display: flex;
     justify-content: center;
     position: relative;
-    left: 33%;
+    left: 35%;
 }
 
 #home .fb-feed iframe {
@@ -117,7 +126,7 @@ nav {
 
 
 #urdu {
-    background-image: url('black3.jpg');
+    /* background-image: url('black3.jpg'); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -164,7 +173,7 @@ nav {
 }
 
 #french {
-    background-image: url('black3.jpg');
+    /* background-image: url('black3.jpg'); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -202,7 +211,7 @@ nav {
     display: flex;
     justify-content: center;
     position: relative;
-    left: 35%;
+    left: 40%;
 }
 
 #french .fb-feed iframe {
@@ -211,7 +220,7 @@ nav {
 }
 
 #chinese {
-    background-image: url('black3.jpg');
+    /* background-image: url('black3.jpg'); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -258,7 +267,7 @@ nav {
 }
 
 #video {
-    background-image: url('black3.jpg');
+    /* background-image: url('black3.jpg'); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -279,35 +288,17 @@ nav {
 }
 
 #video video {
-    max-width: 100%;
+    max-width: 70%;
     max-height: 70vh;
     border: 1px solid #ddd;
     border-radius: 5px;
     z-index: 1;
 }
 
-@media (max-width: 768px) {
-    #video h2 {
-        font-size: 1.5rem;
-    }
 
-    #video video {
-        max-height: 50vh;
-    }
-}
-
-@media (max-width: 480px) {
-    #video h2 {
-        font-size: 1.2rem;
-    }
-
-    #video video {
-        max-height: 40vh;
-    }
-}
 
 #about {
-    background-image: url('black3.jpg');
+    /* background-image: url('black3.jpg'); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -329,13 +320,14 @@ nav {
 }
 
 .about-me-content h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 0;
     text-align: center;
+    position: relative;
 }
 
 .about-me-content p {
-    font-size: 1rem;
+    font-size: 2rem;
     line-height: 1.5;
 }
 
@@ -343,6 +335,8 @@ nav {
     flex: 1;
     text-align: right;
     filter: grayscale(100%);
+    top: -8%;
+    position: relative;
 }
 
 .about-me-image img {
@@ -363,7 +357,7 @@ nav {
     position: relative;
 } */
 #skills {
-    background-image: url('black3.jpg');
+    /* background-image: url('black3.jpg'); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -406,6 +400,7 @@ nav {
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(auto-fill); */
     gap: 2vw;
 }
 
@@ -436,6 +431,7 @@ nav {
 .hard-skills-list {
     list-style-type: none;
     padding-left: 15%;
+    list-style: circle;
 }
 
 .hard-skills-list li {
@@ -470,6 +466,7 @@ nav {
     text-decoration: none;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
 }
 
 
@@ -512,7 +509,7 @@ nav {
 }
 
 #education {
-    background-image: url('black3.jpg');
+    /* background-image: url('black3.jpg'); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -540,6 +537,7 @@ nav {
     padding-left: 4%;
     padding-top: 2%;
     padding-right: 1%;
+    padding-bottom: 100px;
 }
 
 .degree {
@@ -569,7 +567,7 @@ nav {
 }
 
 #degree-programs {
-    background-image: url('black3.jpg');
+    /* background-image: url('black3.jpg'); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -607,6 +605,7 @@ nav {
 
 .degree-programs-list {
     list-style-type: none;
+    list-style: circle;
     padding-left: 15%;
     padding-top: 3%;
     margin-left: 11%;
@@ -619,7 +618,7 @@ nav {
 }
 
 #short-courses {
-    background-image: url('black3.jpg');
+    /* background-image: url('black3.jpg'); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -660,6 +659,7 @@ nav {
     padding-left: 15%;
     padding-top: 3%;
     margin-left: 11%;
+    list-style: circle;
 }
 
 .short-courses-list li {
@@ -671,7 +671,7 @@ nav {
 
 
 #my-projects {
-    background-image: url('black3.jpg');
+    /* background-image: url('black3.jpg'); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -770,7 +770,7 @@ nav {
 .social-icons {
     position: fixed;
     bottom: 8%;
-    left: 1%;
+    left: 2%;
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
@@ -1054,214 +1054,664 @@ footer p {
     font-size: 0.8rem;
 }
 
-/* 
 
 
+/* Base styles */
+nav {
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    /* padding: 1rem; */
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.7);
+}
 
-*/
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-/* Responsive Styles for Navbar */
-@media (max-width: 768px) {
-    .nav-links {
-        flex-direction: column;
-        margin-right: 0;
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-right: 0.5%;
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Hamburger icon styles */
+.nav-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    position: relative;
+
+
+    left: -1rem;
+    background-color: white;
+    /* position: relative; */
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger::before {
+    top: -8px;
+}
+
+.hamburger::after {
+    bottom: -8px;
+}
+
+
+/* Base style for skill icons */
+img.skill-icon {
+    width: 100px;
+    height: auto;
+    transition: width 0.3s ease;
+}
+
+/* Media query for smaller screens (mobile) */
+@media (max-width: 1000px) and (min-width: 600px) {
+    nav {
+        padding: 1rem;
     }
 
     .nav-links li {
-        margin: 0 10px;
+        margin: 10px 0;
     }
 
-    .navbar li a {
-        font-size: 0.8rem;
-    }
-
-    .logo-icon {
-        width: 10vw;
-        height: 10vw;
-    }
-}
-
-@media (max-width: 480px) {
-    .navbar li a {
-        font-size: 0.7rem;
-        padding: 5px 10px;
+    .nav-toggle {
+        display: block;
     }
 
     .nav-links {
+        display: none;
         flex-direction: column;
-        margin-right: 0;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        text-align: center;
+        padding: 1rem 0;
     }
 
-    .nav-links li {
-        margin: 0 10px;
+    /* Toggle active state */
+    .nav-active .nav-links {
+        display: flex;
+    }
+
+    .hamburger {
+        top: 2.5vw;
+    }
+
+    /* Change the hamburger icon to a close icon when active */
+    .nav-active .hamburger {
+        background: transparent;
+    }
+
+    .nav-active .hamburger::before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    .nav-active .hamburger::after {
+        transform: rotate(-45deg);
+        bottom: 0;
     }
 
     .logo-icon {
-        width: 10vw;
-        height: 10vw;
-    }
-}
 
-/* Responsive Styles for Intro Content */
-@media (max-width: 768px) {
+        top: 1rem;
+        margin-left: 20px;
+    }
+
     .intro-content {
         text-align: left;
         padding-left: 5%;
     }
 
     .intro-content h1 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     .intro-content p {
-        font-size: 0.9rem;
+        font-size: 1.3rem;
     }
 
-    .fb-feed {
+    #home .fb-feed {
         display: flex;
         justify-content: center;
         position: absolute;
-        left: 35%;
-        top: -15%;
+        left: 75%;
+        top: 26%;
     }
 
-    .fb-feed iframe {
-        width: 15vw;
+    #home .fb-feed iframe {
+        width: 18vw;
         border-radius: 8rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .intro-content {
-        text-align: left;
-        padding-left: 5%;
-    }
-
-    .intro-content h1 {
-        font-size: 1.2rem;
-    }
-
-    .intro-content p {
-        font-size: 0.8rem;
-    }
-
-    .fb-feed {
-        display: flex;
-        justify-content: center;
-        position: absolute;
-        left: 35%;
-        top: -15%;
-    }
-
-    .fb-feed iframe {
-        width: 15vw;
-        border-radius: 8rem;
-    }
-}
-
-/* Responsive About Section */
-@media (max-width: 768px) {
-    .about-me-content {
-        left: 10%;
-        padding-top: 0;
     }
 
     .about-me-content h2 {
-        font-size: 1.5rem;
+        font-size: 3rem;
+        right: 20%;
     }
 
     .about-me-content p {
-        font-size: 0.9rem;
+        font-size: 1.5rem;
+        padding-right: 5%;
     }
 
-}
-
-@media (min-width: 1200px) {
-    .skills-grid {
-        grid-template-columns: repeat(3, 1fr);
+    .about-me-image {
+        top: -5%;
     }
 
-    .degree-category {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-@media (max-width: 1200px) and (min-width: 600px) {
-    .skills-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .degree-category {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .project {
-        max-width: 30%;
-    }
-
-    .logo-icon {
-        width: 4vw;
-        height: 4vw;
-    }
-}
-
-@media (max-width: 600px) {
-
-    nav,
-    .nav-links {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .logo-icon {
-        width: 8vw;
-        height: 8vw;
-    }
-
-    .center-image img {
-        width: 25vh;
-        height: 25vh;
-    }
-
-
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .degree-category {
-        grid-template-columns: 1fr;
-    }
-
-    .project {
-        flex: 1 1 80%;
-        max-width: 100%;
-    }
-
-    .skills-container {
-        flex-direction: column;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .skills-category,
-    .degree-category {
-        width: 100%;
-    }
-
-    .social-icons {
-        bottom: 5%;
-        left: 2%;
+    img.skill-icon {
+        width: 70px;
+        /* Further reduce size for very small screens */
     }
 
     .likes {
         left: 90%;
     }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    p {
-        font-size: 50%;
+    #skills h2 {
+        font-size: 3rem;
+        padding-top: 25%;
     }
+
+    .dropdown {
+        top: -100%;
+        left: 15%;
+        width: 20%;
+    }
+
+    .dropdown li a {
+        background-color: rgba(40, 39, 39, 0.7);
+    }
+
+    .language-menu {
+        top: -500%;
+        left: 15%;
+        width: 20%;
+    }
+
+    .language-menu li a {
+        background-color: rgba(40, 39, 39, 0.7);
+    }
+
+    #education h2 {
+        padding-top: 15%;
+    }
+
+    #degree-programs h2 {
+        font-size: 3rem;
+        padding-top: 25%;
+    }
+
+    .degree-programs-category h3 {
+        font-size: 1.8rem;
+        margin-top: 100px;
+    }
+
+    .degree-programs-list li {
+        font-size: 1.5rem;
+    }
+
+    #my-projects h1 {
+        padding-top: 15%;
+    }
+
+    .project {
+        max-width: 60%;
+    }
+
+    #short-courses h2 {
+        font-size: 3rem;
+        padding-top: 25%;
+        padding-bottom: 10%;
+    }
+
+    .short-courses-category h3 {
+        font-size: 1.8rem;
+        padding-left: 4%;
+        margin-left: 10%;
+    }
+
+    .short-courses-list li {
+        font-size: 1.5rem;
+    }
+
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .french-content {
+        text-align: left;
+        padding-left: 5%;
+    }
+
+    .french-content h1 {
+        font-size: 1.6rem;
+    }
+
+    .french-content p {
+        font-size: 1.3rem;
+    }
+
+    #french .fb-feed {
+        position: absolute;
+        left: 75%;
+        top: 26%;
+    }
+
+    #french .fb-feed iframe {
+        width: 18vw;
+        border-radius: 8rem;
+    }
+
+    .chinese-content {
+        text-align: left;
+        padding-left: 5%;
+    }
+
+    .chinese-content h1 {
+        font-size: 1.6rem;
+    }
+
+    .chinese-content p {
+        font-size: 1.3rem;
+    }
+
+    #chinese .fb-feed {
+        position: absolute;
+        left: 75%;
+        top: 26%;
+    }
+
+    #chinese .fb-feed iframe {
+        width: 18vw;
+        border-radius: 8rem;
+    }
+
+    .french-content {
+        text-align: left;
+        padding-left: 5%;
+    }
+
+    .french-content h1 {
+        font-size: 1.6rem;
+    }
+
+    .french-content p {
+        font-size: 1.3rem;
+    }
+
+    #french .fb-feed {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        left: 75%;
+        top: 26%;
+    }
+
+    #french .fb-feed iframe {
+        width: 18vw;
+        border-radius: 8rem;
+    }
+
+    .urdu-content {
+        padding-right: 50px;
+        text-align: right;
+        padding-left: 5%;
+    }
+
+    .urdu-content h1 {
+        font-size: 1.6rem;
+    }
+
+    .urdu-content p {
+        font-size: 1.3rem;
+    }
+
+    #urdu .fb-feed {
+        position: absolute;
+        left: 5%;
+        top: 26%;
+    }
+
+    #urdu .fb-feed iframe {
+        width: 18vw;
+        border-radius: 8rem;
+    }
+
+    .social-icons {
+        left: 3%;
+    }
+
+    .skills-category {
+        padding-bottom: 100px;
+    }
+
+    .skills-category,
+    .degree-category {
+        width: 90%;
+    }
+
+}
+
+/* Media query for even smaller screens (extra small) */
+@media (max-width: 600px) and (min-width: 100px) {
+    nav {
+        padding: 1rem;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .hamburger {
+        top: 5.5vw;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    /* Toggle active state */
+    .nav-active .nav-links {
+        display: flex;
+    }
+
+    /* Change the hamburger icon to a close icon when active */
+    .nav-active .hamburger {
+        background: transparent;
+    }
+
+    .nav-active .hamburger::before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    .nav-active .hamburger::after {
+        transform: rotate(-45deg);
+        bottom: 0;
+    }
+
+    .logo-icon {
+        width: 8vw;
+        height: 8vw;
+        top: 1rem;
+        margin-left: 20px;
+    }
+
+    img.skill-icon {
+        width: 50px;
+        /* Further reduce size for very small screens */
+    }
+
+    .intro-content {
+        text-align: center;
+        padding-left: 1%;
+        padding: 20px 20px;
+    }
+
+    .intro-content h1 {
+        padding-top: 100px;
+        font-size: 1.5rem;
+    }
+
+    .intro-content p {
+        font-size: 1.1rem;
+    }
+
+    #home .fb-feed {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        left: 40%;
+        top: 20%;
+    }
+
+    #home .fb-feed iframe {
+        width: 25vw;
+        border-radius: 8rem;
+    }
+
+    .about-me-content h2 {
+        font-size: 2rem;
+        right: 10%;
+        top: 50%;
+    }
+
+    .about-me-content p {
+        font-size: 1rem;
+        padding-right: 10%;
+    }
+
+    .about-me-image {
+        top: -25%;
+        left: -30%;
+    }
+
+    #my-projects h1 {
+        padding-top: 15%;
+    }
+
+    .project {
+        min-width: 80%;
+    }
+
+    .project-list {
+        padding-bottom: 50px;
+    }
+
+    .likes {
+        left: 80%;
+    }
+
+    #skills h2 {
+        font-size: 3rem;
+        padding-top: 25%;
+    }
+
+    .dropdown {
+        top: -100%;
+        left: 15%;
+        width: 20%;
+    }
+
+    .dropdown li a {
+        background-color: rgba(40, 39, 39, 0.7);
+    }
+
+    .language-menu {
+        top: -500%;
+        left: 15%;
+        width: 20%;
+    }
+
+    .language-menu li a {
+        background-color: rgba(40, 39, 39, 0.7);
+    }
+
+    #education h2 {
+        padding-top: 25%;
+    }
+
+    #degree-programs h2 {
+        font-size: 3rem;
+        padding-top: 25%;
+    }
+
+    .degree-programs-category h3 {
+        font-size: 1.8rem;
+        margin-top: 100px;
+    }
+
+    .degree-programs-category {
+        margin: 0px 20px;
+    }
+
+    .degree-programs-list li {
+        font-size: 1.5rem;
+    }
+
+    #short-courses h2 {
+        font-size: 3rem;
+        padding-top: 25%;
+        padding-bottom: 10%;
+    }
+
+    .short-courses-category {
+        margin: 0px 20px;
+    }
+
+    .short-courses-category h3 {
+        font-size: 1.8rem;
+        padding-left: 4%;
+        margin-left: 10%;
+    }
+
+    .short-courses-list li {
+        font-size: 1.5rem;
+    }
+
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .skills-category {
+        padding-bottom: 100px;
+    }
+
+    .chinese-content {
+        text-align: center;
+        padding-left: 1%;
+    }
+
+    .chinese-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .chinese-content p {
+        font-size: 0.8rem;
+    }
+
+    #chinese .fb-feed {
+        position: absolute;
+        left: 40%;
+        top: 20%;
+    }
+
+    #chinese .fb-feed iframe {
+        width: 18vw;
+        border-radius: 8rem;
+    }
+
+    .french-content {
+        text-align: center;
+        padding-left: 1%;
+    }
+
+    .french-content h1 {
+        font-size: 1.3rem;
+    }
+
+    .french-content p {
+        font-size: 0.8rem;
+    }
+
+    #french .fb-feed {
+        display: flex;
+        position: absolute;
+        left: 40%;
+        top: 20%;
+    }
+
+    #french .fb-feed iframe {
+        width: 18vw;
+        border-radius: 8rem;
+    }
+
+    .urdu-content {
+        text-align: center;
+        padding-left: 1%;
+    }
+
+    .urdu-content h1 {
+        font-size: 1.3rem;
+    }
+
+    .urdu-content p {
+        font-size: 0.8rem;
+    }
+
+    #urdu .fb-feed {
+        display: flex;
+        position: absolute;
+        left: 40%;
+        top: 20%;
+    }
+
+    #urdu .fb-feed iframe {
+        width: 18vw;
+        border-radius: 8rem;
+    }
+
+    .social-icons {
+        left: 3%;
+    }
+
+    .skills-category,
+    .degree-category {
+        width: 90%;
+    }
+
 }

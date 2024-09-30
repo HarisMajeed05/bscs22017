@@ -13,6 +13,9 @@
 
 <body>
     <nav id="nav">
+        <button class="nav-toggle" aria-label="Toggle Navigation">
+            <span class="hamburger"></span>
+        </button>
 
     </nav>
 
@@ -30,6 +33,12 @@
     </footer>
     <script src="script.js"></script>
     <script>
+        const navToggle = document.querySelector(".nav-toggle");
+        const body = document.querySelector("body");
+
+        navToggle.addEventListener("click", () => {
+            body.classList.toggle("nav-active");
+        });
         const projectSection = {
             title: "My Projects",
             projects: [

@@ -11,9 +11,19 @@
 </head>
 
 <body>
+    <!-- <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+    </button>
     <nav id="nav">
 
+    </nav> -->
+    <nav id="nav">
+        <button class="nav-toggle" aria-label="Toggle Navigation">
+            <span class="hamburger"></span>
+        </button>
+
     </nav>
+
 
 
     <section id="home">
@@ -482,6 +492,13 @@
 
     </script> -->
     <script>
+        const navToggle = document.querySelector(".nav-toggle");
+        const body = document.querySelector("body");
+
+        navToggle.addEventListener("click", () => {
+            body.classList.toggle("nav-active");
+        });
+
         const navContent = {
             logo: {
                 link: "https://drive.google.com/file/d/1VQg1lYuNCwmhDFdBXgl_e88wjQ8JZWeQ/view?usp=sharing",
@@ -620,6 +637,7 @@
                     overflow: "hidden"
                 },
                 title: "Posts from Facebook"
+
             }
         };
 
@@ -1022,6 +1040,7 @@
                 const skillImage = document.createElement('img');
                 skillImage.src = skill.imgSrc;
                 skillImage.alt = skill.alt;
+                skillImage.className = "skill-icon";
 
                 const skillName = document.createElement('p');
                 skillName.textContent = skill.name;
@@ -1037,6 +1056,49 @@
             //divCategory.appendChild(grid);
             container.appendChild(grid);
         }
+        function printSkills(skillsData) {
+            const skillsContainer = document.getElementById('skills');
+
+            const title = document.createElement('h2');
+            title.textContent = skillsData.title;
+            skillsContainer.appendChild(title);
+
+            const description = document.createElement('p');
+            description.textContent = skillsData.description;
+            skillsContainer.appendChild(description);
+
+            skillsData.categories.forEach(category => {
+                const categoryTitle = document.createElement('h3');
+                categoryTitle.textContent = category.category;
+                skillsContainer.appendChild(categoryTitle);
+
+                const skillList = document.createElement('ul');
+                category.skills.forEach(skill => {
+                    const skillItem = document.createElement('li');
+
+                    const skillLink = document.createElement('a');
+                    skillLink.href = skill.link;
+                    skillLink.target = "_blank";
+
+                    const skillImage = document.createElement('img');
+                    skillImage.src = skill.imgSrc;
+                    skillImage.alt = skill.alt;
+                    skillImage.className = "skill-icon"; // Added class for CSS targeting
+
+                    const skillName = document.createElement('p');
+                    skillName.textContent = skill.name;
+
+                    skillLink.appendChild(skillImage);
+                    skillItem.appendChild(skillLink);
+                    skillItem.appendChild(skillName);
+                    skillList.appendChild(skillItem);
+                });
+                skillsContainer.appendChild(skillList);
+            });
+        }
+
+        //printSkills(skillsData);
+
 
         // Call the function to display the skills
         displaySkill(skillsData);

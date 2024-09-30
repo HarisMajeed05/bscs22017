@@ -12,13 +12,16 @@
 
 <body>
     <nav id="nav">
+        <button class="nav-toggle" aria-label="Toggle Navigation">
+            <span class="hamburger"></span>
+        </button>
 
     </nav>
 
 
 
     <section id="urdu">
-        <div class="intro-content" id="urdu-intro-content">
+        <div class="urdu-content" id="urdu-intro-content">
 
         </div>
         <div class="fb-feed" id="fb-feed">
@@ -43,6 +46,13 @@
     </footer>
     <script src="script.js"></script>
     <script>
+
+        const navToggle = document.querySelector(".nav-toggle");
+        const body = document.querySelector("body");
+
+        navToggle.addEventListener("click", () => {
+            body.classList.toggle("nav-active");
+        });
         const navContent = {
             logo: {
                 link: "https://drive.google.com/file/d/1VQg1lYuNCwmhDFdBXgl_e88wjQ8JZWeQ/view?usp=sharing",
@@ -335,6 +345,10 @@
         // Call the function to print the social icons
         printSocialIcons(socialIconsContent);
 
+        document.addEventListener("DOMContentLoaded", function () {
+            const to_change = document.getElementById("urdu-intro-content");
+            to_change.dir = "rtl";
+        });
 
         const foot = {
             content: "© 2024 Haris Majeed Raja"
